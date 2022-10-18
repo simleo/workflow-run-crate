@@ -1,0 +1,908 @@
+{
+  "prefix": {
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "cwlprov": "https://w3id.org/cwl/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "orcid": "https://orcid.org/",
+    "id": "urn:uuid:",
+    "data": "urn:hash::sha1:",
+    "sha256": "nih:sha-256;",
+    "researchobject": "arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/",
+    "metadata": "arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/metadata/",
+    "provenance": "arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/metadata/provenance/",
+    "wf": "arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#",
+    "input": "arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/primary-job.json#",
+    "wf4ever": "http://purl.org/wf4ever/wf4ever#"
+  },
+  "agent": {
+    "id:ba1e0e3b-bca5-42f7-8308-64cc762ab83b": {},
+    "id:fea087d1-cbbe-4cda-9bfd-00baa4f33465": {
+      "prov:type": [
+        {
+          "$": "prov:SoftwareAgent",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "wfprov:WorkflowEngine",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ],
+      "prov:label": "cwltool 3.1.20220628170238"
+    },
+    "id:40832f27-f8cd-47a0-abb2-ef3367287d94": {
+      "prov:type": {
+        "$": "prov:SoftwareAgent",
+        "type": "prov:QUALIFIED_NAME"
+      },
+      "cwlprov:image": "crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn",
+      "prov:label": "Container execution of image crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn"
+    },
+    "id:aeee3efa-e4cb-4794-aa11-90db77b19952": {
+      "prov:type": {
+        "$": "prov:SoftwareAgent",
+        "type": "prov:QUALIFIED_NAME"
+      },
+      "cwlprov:image": "crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn",
+      "prov:label": "Container execution of image crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn"
+    },
+    "id:d57c1f0c-128b-4e39-9c50-9ae96d6d1b0d": {
+      "prov:type": {
+        "$": "prov:SoftwareAgent",
+        "type": "prov:QUALIFIED_NAME"
+      },
+      "cwlprov:image": "crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn",
+      "prov:label": "Container execution of image crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn"
+    }
+  },
+  "wasStartedBy": {
+    "_:id1": {
+      "prov:activity": "id:fea087d1-cbbe-4cda-9bfd-00baa4f33465",
+      "prov:starter": "id:ba1e0e3b-bca5-42f7-8308-64cc762ab83b",
+      "prov:time": "2022-10-18T11:20:55.445788"
+    },
+    "_:id3": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:starter": "id:fea087d1-cbbe-4cda-9bfd-00baa4f33465",
+      "prov:time": "2022-10-18T11:20:55.445893"
+    },
+    "_:id16": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:starter": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:time": "2022-10-18T11:21:09.677941"
+    },
+    "_:id30": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:starter": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:time": "2022-10-18T11:29:14.582862"
+    },
+    "_:id44": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:starter": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:time": "2022-10-18T11:29:28.645617"
+    }
+  },
+  "activity": {
+    "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb": {
+      "prov:startTime": "2022-10-18T11:20:55.445819",
+      "prov:type": {
+        "$": "wfprov:WorkflowRun",
+        "type": "prov:QUALIFIED_NAME"
+      },
+      "prov:label": "Run of workflow/packed.cwl#main"
+    },
+    "id:54941acd-720a-4ae0-8a3e-f00962de2b43": {
+      "prov:type": {
+        "$": "wfprov:ProcessRun",
+        "type": "prov:QUALIFIED_NAME"
+      },
+      "prov:label": "Run of workflow/packed.cwl#main/extract-tissue-low"
+    },
+    "id:ab2aea96-68df-4943-a87c-82086cf071bf": {
+      "prov:type": {
+        "$": "wfprov:ProcessRun",
+        "type": "prov:QUALIFIED_NAME"
+      },
+      "prov:label": "Run of workflow/packed.cwl#main/classify-tumor"
+    },
+    "id:cc687c0c-1846-42cc-ab89-baf08b86385c": {
+      "prov:type": {
+        "$": "wfprov:ProcessRun",
+        "type": "prov:QUALIFIED_NAME"
+      },
+      "prov:label": "Run of workflow/packed.cwl#main/extract-tissue-high"
+    }
+  },
+  "wasAssociatedWith": {
+    "_:id2": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:agent": "id:fea087d1-cbbe-4cda-9bfd-00baa4f33465",
+      "prov:plan": "wf:main"
+    },
+    "_:id15": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:agent": "id:fea087d1-cbbe-4cda-9bfd-00baa4f33465",
+      "prov:plan": "wf:main/extract-tissue-low"
+    },
+    "_:id17": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:agent": "id:40832f27-f8cd-47a0-abb2-ef3367287d94"
+    },
+    "_:id29": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:agent": "id:fea087d1-cbbe-4cda-9bfd-00baa4f33465",
+      "prov:plan": "wf:main/classify-tumor"
+    },
+    "_:id31": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:agent": "id:aeee3efa-e4cb-4794-aa11-90db77b19952"
+    },
+    "_:id43": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:agent": "id:fea087d1-cbbe-4cda-9bfd-00baa4f33465",
+      "prov:plan": "wf:main/extract-tissue-high"
+    },
+    "_:id45": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:agent": "id:d57c1f0c-128b-4e39-9c50-9ae96d6d1b0d"
+    }
+  },
+  "entity": {
+    "wf:main": [
+      {
+        "prov:type": [
+          {
+            "$": "prov:Plan",
+            "type": "prov:QUALIFIED_NAME"
+          },
+          {
+            "$": "wfdesc:Workflow",
+            "type": "prov:QUALIFIED_NAME"
+          }
+        ],
+        "prov:label": "Prospective provenance"
+      },
+      {
+        "wfdesc:hasSubProcess": {
+          "$": "wf:main/extract-tissue-low",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:label": "Prospective provenance"
+      },
+      {
+        "wfdesc:hasSubProcess": {
+          "$": "wf:main/classify-tumor",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:label": "Prospective provenance"
+      },
+      {
+        "wfdesc:hasSubProcess": {
+          "$": "wf:main/extract-tissue-high",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:label": "Prospective provenance"
+      }
+    ],
+    "wf:main/extract-tissue-low": {
+      "prov:type": [
+        {
+          "$": "wfdesc:Process",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "prov:Plan",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ]
+    },
+    "wf:main/classify-tumor": {
+      "prov:type": [
+        {
+          "$": "wfdesc:Process",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "prov:Plan",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ]
+    },
+    "wf:main/extract-tissue-high": {
+      "prov:type": [
+        {
+          "$": "wfdesc:Process",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "prov:Plan",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ]
+    },
+    "cwlprov:None": [
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      },
+      {
+        "prov:label": "None"
+      }
+    ],
+    "data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852": [
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      },
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      },
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      },
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      }
+    ],
+    "id:b4de4243-6f83-4a98-b998-1f526c45bf00": {
+      "prov:type": [
+        {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "wf4ever:File",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ],
+      "cwlprov:basename": "Mirax2-Fluorescence-2.mrxs",
+      "cwlprov:nameroot": "Mirax2-Fluorescence-2",
+      "cwlprov:nameext": ".mrxs"
+    },
+    "data:3c7901bab39947a3402da2687583e4dffb2530f9": [
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tissue_low>0.9"
+      },
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tissue_low>0.9"
+      }
+    ],
+    "data:869623a779aaf26d38a26e562703f624fa40d29f": [
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tissue_high"
+      },
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tissue_high"
+      }
+    ],
+    "id:6b6b3a91-5724-440d-8e09-f65e09ee411d": {
+      "prov:value": {
+        "$": 4,
+        "type": "xsd:int"
+      }
+    },
+    "data:0b2b5f414b65f0315615670701c2951670995ae1": [
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tissue_low"
+      },
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tissue_low"
+      }
+    ],
+    "id:22efb722-4bd5-472e-ba49-02bb7a8f4384": {
+      "prov:value": {
+        "$": 9,
+        "type": "xsd:int"
+      }
+    },
+    "data:ff7335228d2ffbe6347decead594cfc9618968e6": [
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tissue_low>0.99"
+      },
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tissue_low>0.99"
+      }
+    ],
+    "data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27": [
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tumor"
+      },
+      {
+        "prov:type": {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        "prov:value": "tumor"
+      }
+    ],
+    "id:17b24628-793f-4873-a5f8-d660f8325cb2": {
+      "prov:value": {
+        "$": 1,
+        "type": "xsd:int"
+      }
+    },
+    "id:8f0abd13-eba3-4d16-b55a-a320b3225a0b": {
+      "prov:value": {
+        "$": 9,
+        "type": "xsd:int"
+      }
+    },
+    "id:5fb7a87e-343b-437b-b8a3-3df35aede373": {
+      "prov:type": [
+        {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "wf4ever:File",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ],
+      "cwlprov:basename": "Mirax2-Fluorescence-2.mrxs",
+      "cwlprov:nameroot": "Mirax2-Fluorescence-2",
+      "cwlprov:nameext": ".mrxs"
+    },
+    "data:bf53fa21295d0f7ede7e01eae3f1b996ecccda1e": {
+      "prov:type": {
+        "$": "wfprov:Artifact",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "id:45df11a8-a7ae-4fac-8a32-704570ef327a": {
+      "prov:type": [
+        {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "wf4ever:File",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ],
+      "cwlprov:basename": "tissue_low.zip",
+      "cwlprov:nameroot": "tissue_low",
+      "cwlprov:nameext": ".zip"
+    },
+    "id:48dbcea6-8e7e-4169-9f69-f5771c6d5153": {
+      "prov:value": {
+        "$": 1,
+        "type": "xsd:int"
+      }
+    },
+    "id:b6239717-4e81-4948-830f-8ec3b23918a7": {
+      "prov:type": [
+        {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "wf4ever:File",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ],
+      "cwlprov:basename": "Mirax2-Fluorescence-2.mrxs",
+      "cwlprov:nameroot": "Mirax2-Fluorescence-2",
+      "cwlprov:nameext": ".mrxs"
+    },
+    "data:c403885efdca39742d44906203b03e9607c4a2f5": {
+      "prov:type": {
+        "$": "wfprov:Artifact",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "id:54e6d55e-c11b-4018-9b2b-0de125087ccc": {
+      "prov:type": [
+        {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "wf4ever:File",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ],
+      "cwlprov:basename": "tumor.zip",
+      "cwlprov:nameroot": "tumor",
+      "cwlprov:nameext": ".zip"
+    },
+    "id:b235ee0f-16ec-4ccb-ac85-162135d496c8": {
+      "prov:value": {
+        "$": 4,
+        "type": "xsd:int"
+      }
+    },
+    "id:e7e617cb-9471-4e1f-ad66-eb77119f2a05": {
+      "prov:type": [
+        {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "wf4ever:File",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ],
+      "cwlprov:basename": "Mirax2-Fluorescence-2.mrxs",
+      "cwlprov:nameroot": "Mirax2-Fluorescence-2",
+      "cwlprov:nameext": ".mrxs"
+    },
+    "data:c449e3b1c46db96af61f9364f4cb3105d9c31a9c": {
+      "prov:type": {
+        "$": "wfprov:Artifact",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "id:c34b4c32-ea01-42f8-825c-77a8aee358f3": {
+      "prov:type": [
+        {
+          "$": "wfprov:Artifact",
+          "type": "prov:QUALIFIED_NAME"
+        },
+        {
+          "$": "wf4ever:File",
+          "type": "prov:QUALIFIED_NAME"
+        }
+      ],
+      "cwlprov:basename": "tissue_high.zip",
+      "cwlprov:nameroot": "tissue_high",
+      "cwlprov:nameext": ".zip"
+    }
+  },
+  "used": {
+    "_:id4": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:21:09.198917",
+      "prov:role": {
+        "$": "wf:main/gpu",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id6": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "id:b4de4243-6f83-4a98-b998-1f526c45bf00",
+      "prov:time": "2022-10-18T11:21:09.199448",
+      "prov:role": {
+        "$": "wf:main/slide",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id7": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "data:3c7901bab39947a3402da2687583e4dffb2530f9",
+      "prov:time": "2022-10-18T11:21:09.199792",
+      "prov:role": {
+        "$": "wf:main/tissue-high-filter",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id8": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "data:869623a779aaf26d38a26e562703f624fa40d29f",
+      "prov:time": "2022-10-18T11:21:09.200098",
+      "prov:role": {
+        "$": "wf:main/tissue-high-label",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id9": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "id:6b6b3a91-5724-440d-8e09-f65e09ee411d",
+      "prov:time": "2022-10-18T11:21:09.200175",
+      "prov:role": {
+        "$": "wf:main/tissue-high-level",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id10": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "data:0b2b5f414b65f0315615670701c2951670995ae1",
+      "prov:time": "2022-10-18T11:21:09.200472",
+      "prov:role": {
+        "$": "wf:main/tissue-low-label",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id11": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "id:22efb722-4bd5-472e-ba49-02bb7a8f4384",
+      "prov:time": "2022-10-18T11:21:09.200544",
+      "prov:role": {
+        "$": "wf:main/tissue-low-level",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id12": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "data:ff7335228d2ffbe6347decead594cfc9618968e6",
+      "prov:time": "2022-10-18T11:21:09.200836",
+      "prov:role": {
+        "$": "wf:main/tumor-filter",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id13": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27",
+      "prov:time": "2022-10-18T11:21:09.201134",
+      "prov:role": {
+        "$": "wf:main/tumor-label",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id14": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:entity": "id:17b24628-793f-4873-a5f8-d660f8325cb2",
+      "prov:time": "2022-10-18T11:21:09.201204",
+      "prov:role": {
+        "$": "wf:main/tumor-level",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id18": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:12.049463",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-low/batch-size",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id19": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:12.049550",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-low/chunk-size",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id20": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:12.049594",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-low/gpu",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id21": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:entity": "data:0b2b5f414b65f0315615670701c2951670995ae1",
+      "prov:time": "2022-10-18T11:29:12.050329",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-low/label",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id22": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:entity": "id:8f0abd13-eba3-4d16-b55a-a320b3225a0b",
+      "prov:time": "2022-10-18T11:29:12.050447",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-low/level",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id24": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:12.051082",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-low/filter",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id25": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:12.051131",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-low/filter_slide",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id32": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:18.437182",
+      "prov:role": {
+        "$": "wf:main/classify-tumor/batch-size",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id33": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:18.437854",
+      "prov:role": {
+        "$": "wf:main/classify-tumor/chunk-size",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id34": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:entity": "data:ff7335228d2ffbe6347decead594cfc9618968e6",
+      "prov:time": "2022-10-18T11:29:18.440991",
+      "prov:role": {
+        "$": "wf:main/classify-tumor/filter",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id35": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:entity": "id:45df11a8-a7ae-4fac-8a32-704570ef327a",
+      "prov:time": "2022-10-18T11:29:18.441591",
+      "prov:role": {
+        "$": "wf:main/classify-tumor/filter_slide",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id36": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:18.442072",
+      "prov:role": {
+        "$": "wf:main/classify-tumor/gpu",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id37": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:entity": "data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27",
+      "prov:time": "2022-10-18T11:29:18.444184",
+      "prov:role": {
+        "$": "wf:main/classify-tumor/label",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id38": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:entity": "id:48dbcea6-8e7e-4169-9f69-f5771c6d5153",
+      "prov:time": "2022-10-18T11:29:18.445033",
+      "prov:role": {
+        "$": "wf:main/classify-tumor/level",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id46": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:entity": "data:3c7901bab39947a3402da2687583e4dffb2530f9",
+      "prov:time": "2022-10-18T11:29:28.652605",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-high/filter",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id47": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:entity": "id:45df11a8-a7ae-4fac-8a32-704570ef327a",
+      "prov:time": "2022-10-18T11:29:28.652708",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-high/filter_slide",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id48": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:28.652762",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-high/gpu",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id49": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:entity": "data:869623a779aaf26d38a26e562703f624fa40d29f",
+      "prov:time": "2022-10-18T11:29:28.653047",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-high/label",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id50": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:entity": "id:b235ee0f-16ec-4ccb-ac85-162135d496c8",
+      "prov:time": "2022-10-18T11:29:28.653158",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-high/level",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id52": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:28.653739",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-high/batch-size",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id53": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:entity": "cwlprov:None",
+      "prov:time": "2022-10-18T11:29:28.653786",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-high/chunk-size",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    }
+  },
+  "specializationOf": {
+    "_:id5": {
+      "prov:specificEntity": "id:b4de4243-6f83-4a98-b998-1f526c45bf00",
+      "prov:generalEntity": "data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"
+    },
+    "_:id23": {
+      "prov:specificEntity": "id:5fb7a87e-343b-437b-b8a3-3df35aede373",
+      "prov:generalEntity": "data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"
+    },
+    "_:id26": {
+      "prov:specificEntity": "id:45df11a8-a7ae-4fac-8a32-704570ef327a",
+      "prov:generalEntity": "data:bf53fa21295d0f7ede7e01eae3f1b996ecccda1e"
+    },
+    "_:id39": {
+      "prov:specificEntity": "id:b6239717-4e81-4948-830f-8ec3b23918a7",
+      "prov:generalEntity": "data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"
+    },
+    "_:id40": {
+      "prov:specificEntity": "id:54e6d55e-c11b-4018-9b2b-0de125087ccc",
+      "prov:generalEntity": "data:c403885efdca39742d44906203b03e9607c4a2f5"
+    },
+    "_:id51": {
+      "prov:specificEntity": "id:e7e617cb-9471-4e1f-ad66-eb77119f2a05",
+      "prov:generalEntity": "data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"
+    },
+    "_:id54": {
+      "prov:specificEntity": "id:c34b4c32-ea01-42f8-825c-77a8aee358f3",
+      "prov:generalEntity": "data:c449e3b1c46db96af61f9364f4cb3105d9c31a9c"
+    }
+  },
+  "wasGeneratedBy": {
+    "_:id27": {
+      "prov:entity": "id:45df11a8-a7ae-4fac-8a32-704570ef327a",
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:time": "2022-10-18T11:29:14.566371",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-low/tissue",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id41": {
+      "prov:entity": "id:54e6d55e-c11b-4018-9b2b-0de125087ccc",
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:time": "2022-10-18T11:29:28.635208",
+      "prov:role": {
+        "$": "wf:main/classify-tumor/tumor",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id55": {
+      "prov:entity": "id:c34b4c32-ea01-42f8-825c-77a8aee358f3",
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:time": "2022-10-18T11:29:30.363779",
+      "prov:role": {
+        "$": "wf:main/extract-tissue-high/tissue",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id57": {
+      "prov:entity": "id:c34b4c32-ea01-42f8-825c-77a8aee358f3",
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:time": "2022-10-18T11:29:30.374934",
+      "prov:role": {
+        "$": "wf:main/primary/tissue",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    },
+    "_:id58": {
+      "prov:entity": "id:54e6d55e-c11b-4018-9b2b-0de125087ccc",
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:time": "2022-10-18T11:29:30.374934",
+      "prov:role": {
+        "$": "wf:main/primary/tumor",
+        "type": "prov:QUALIFIED_NAME"
+      }
+    }
+  },
+  "wasEndedBy": {
+    "_:id28": {
+      "prov:activity": "id:54941acd-720a-4ae0-8a3e-f00962de2b43",
+      "prov:ender": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:time": "2022-10-18T11:29:14.566362"
+    },
+    "_:id42": {
+      "prov:activity": "id:ab2aea96-68df-4943-a87c-82086cf071bf",
+      "prov:ender": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:time": "2022-10-18T11:29:28.635198"
+    },
+    "_:id56": {
+      "prov:activity": "id:cc687c0c-1846-42cc-ab89-baf08b86385c",
+      "prov:ender": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:time": "2022-10-18T11:29:30.363765"
+    },
+    "_:id59": {
+      "prov:activity": "id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb",
+      "prov:ender": "id:fea087d1-cbbe-4cda-9bfd-00baa4f33465",
+      "prov:time": "2022-10-18T11:29:30.375054"
+    }
+  }
+}

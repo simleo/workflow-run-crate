@@ -1,0 +1,365 @@
+@prefix cwlprov: <https://w3id.org/cwl/prov#> .
+@prefix data: <urn:hash::sha1:> .
+@prefix id: <urn:uuid:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wf: <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+id:54e6d55e-c11b-4018-9b2b-0de125087ccc a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:activity id:ab2aea96-68df-4943-a87c-82086cf071bf ;
+            prov:atTime "2022-10-18T11:29:28.635208"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor/tumor> ],
+        [ a prov:Generation ;
+            prov:activity id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb ;
+            prov:atTime "2022-10-18T11:29:30.374934"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/primary/tumor> ] ;
+    prov:specializationOf data:c403885efdca39742d44906203b03e9607c4a2f5 ;
+    cwlprov:basename "tumor.zip"^^xsd:string ;
+    cwlprov:nameext ".zip"^^xsd:string ;
+    cwlprov:nameroot "tumor"^^xsd:string .
+
+id:5fb7a87e-343b-437b-b8a3-3df35aede373 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852 ;
+    cwlprov:basename "Mirax2-Fluorescence-2.mrxs"^^xsd:string ;
+    cwlprov:nameext ".mrxs"^^xsd:string ;
+    cwlprov:nameroot "Mirax2-Fluorescence-2"^^xsd:string .
+
+id:b6239717-4e81-4948-830f-8ec3b23918a7 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852 ;
+    cwlprov:basename "Mirax2-Fluorescence-2.mrxs"^^xsd:string ;
+    cwlprov:nameext ".mrxs"^^xsd:string ;
+    cwlprov:nameroot "Mirax2-Fluorescence-2"^^xsd:string .
+
+id:c34b4c32-ea01-42f8-825c-77a8aee358f3 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:activity id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb ;
+            prov:atTime "2022-10-18T11:29:30.374934"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/primary/tissue> ],
+        [ a prov:Generation ;
+            prov:activity id:cc687c0c-1846-42cc-ab89-baf08b86385c ;
+            prov:atTime "2022-10-18T11:29:30.363779"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high/tissue> ] ;
+    prov:specializationOf data:c449e3b1c46db96af61f9364f4cb3105d9c31a9c ;
+    cwlprov:basename "tissue_high.zip"^^xsd:string ;
+    cwlprov:nameext ".zip"^^xsd:string ;
+    cwlprov:nameroot "tissue_high"^^xsd:string .
+
+id:e7e617cb-9471-4e1f-ad66-eb77119f2a05 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852 ;
+    cwlprov:basename "Mirax2-Fluorescence-2.mrxs"^^xsd:string ;
+    cwlprov:nameext ".mrxs"^^xsd:string ;
+    cwlprov:nameroot "Mirax2-Fluorescence-2"^^xsd:string .
+
+wf:main a wfdesc:Workflow,
+        prov:Entity,
+        prov:Plan ;
+    rdfs:label "Prospective provenance"^^xsd:string ;
+    wfdesc:hasSubProcess <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor>,
+        <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high>,
+        <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low> .
+
+data:bf53fa21295d0f7ede7e01eae3f1b996ecccda1e a wfprov:Artifact,
+        prov:Entity .
+
+data:c403885efdca39742d44906203b03e9607c4a2f5 a wfprov:Artifact,
+        prov:Entity .
+
+data:c449e3b1c46db96af61f9364f4cb3105d9c31a9c a wfprov:Artifact,
+        prov:Entity .
+
+id:17b24628-793f-4873-a5f8-d660f8325cb2 a prov:Entity ;
+    prov:value "1"^^xsd:int .
+
+id:22efb722-4bd5-472e-ba49-02bb7a8f4384 a prov:Entity ;
+    prov:value "9"^^xsd:int .
+
+id:40832f27-f8cd-47a0-abb2-ef3367287d94 a prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "Container execution of image crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn"^^xsd:string ;
+    cwlprov:image "crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn"^^xsd:string .
+
+id:48dbcea6-8e7e-4169-9f69-f5771c6d5153 a prov:Entity ;
+    prov:value "1"^^xsd:int .
+
+id:54941acd-720a-4ae0-8a3e-f00962de2b43 a wfprov:ProcessRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main/extract-tissue-low"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low> ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2022-10-18T11:29:14.566362"^^xsd:dateTime ;
+            prov:hadActivity id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-10-18T11:21:09.677941"^^xsd:dateTime ;
+            prov:hadActivity id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:12.050329"^^xsd:dateTime ;
+            prov:entity data:0b2b5f414b65f0315615670701c2951670995ae1 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low/label> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:12.049594"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low/gpu> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:12.050447"^^xsd:dateTime ;
+            prov:entity id:8f0abd13-eba3-4d16-b55a-a320b3225a0b ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low/level> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:12.051131"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low/filter_slide> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:12.049463"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low/batch-size> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:12.051082"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low/filter> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:12.049550"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low/chunk-size> ] ;
+    prov:wasAssociatedWith id:40832f27-f8cd-47a0-abb2-ef3367287d94,
+        id:fea087d1-cbbe-4cda-9bfd-00baa4f33465 .
+
+id:6b6b3a91-5724-440d-8e09-f65e09ee411d a prov:Entity ;
+    prov:value "4"^^xsd:int .
+
+id:8f0abd13-eba3-4d16-b55a-a320b3225a0b a prov:Entity ;
+    prov:value "9"^^xsd:int .
+
+id:ab2aea96-68df-4943-a87c-82086cf071bf a wfprov:ProcessRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main/classify-tumor"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor> ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2022-10-18T11:29:28.635198"^^xsd:dateTime ;
+            prov:hadActivity id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-10-18T11:29:14.582862"^^xsd:dateTime ;
+            prov:hadActivity id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:18.441591"^^xsd:dateTime ;
+            prov:entity id:45df11a8-a7ae-4fac-8a32-704570ef327a ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor/filter_slide> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:18.442072"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor/gpu> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:18.437854"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor/chunk-size> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:18.445033"^^xsd:dateTime ;
+            prov:entity id:48dbcea6-8e7e-4169-9f69-f5771c6d5153 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor/level> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:18.437182"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor/batch-size> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:18.444184"^^xsd:dateTime ;
+            prov:entity data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor/label> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:18.440991"^^xsd:dateTime ;
+            prov:entity data:ff7335228d2ffbe6347decead594cfc9618968e6 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor/filter> ] ;
+    prov:wasAssociatedWith id:aeee3efa-e4cb-4794-aa11-90db77b19952,
+        id:fea087d1-cbbe-4cda-9bfd-00baa4f33465 .
+
+id:aeee3efa-e4cb-4794-aa11-90db77b19952 a prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "Container execution of image crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn"^^xsd:string ;
+    cwlprov:image "crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn"^^xsd:string .
+
+id:b235ee0f-16ec-4ccb-ac85-162135d496c8 a prov:Entity ;
+    prov:value "4"^^xsd:int .
+
+id:b4de4243-6f83-4a98-b998-1f526c45bf00 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852 ;
+    cwlprov:basename "Mirax2-Fluorescence-2.mrxs"^^xsd:string ;
+    cwlprov:nameext ".mrxs"^^xsd:string ;
+    cwlprov:nameroot "Mirax2-Fluorescence-2"^^xsd:string .
+
+id:ba1e0e3b-bca5-42f7-8308-64cc762ab83b a prov:Agent .
+
+id:cc687c0c-1846-42cc-ab89-baf08b86385c a wfprov:ProcessRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main/extract-tissue-high"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high> ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2022-10-18T11:29:30.363765"^^xsd:dateTime ;
+            prov:hadActivity id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-10-18T11:29:28.645617"^^xsd:dateTime ;
+            prov:hadActivity id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:28.653786"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high/chunk-size> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:28.653158"^^xsd:dateTime ;
+            prov:entity id:b235ee0f-16ec-4ccb-ac85-162135d496c8 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high/level> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:28.653047"^^xsd:dateTime ;
+            prov:entity data:869623a779aaf26d38a26e562703f624fa40d29f ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high/label> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:28.652762"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high/gpu> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:28.653739"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high/batch-size> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:28.652605"^^xsd:dateTime ;
+            prov:entity data:3c7901bab39947a3402da2687583e4dffb2530f9 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high/filter> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:29:28.652708"^^xsd:dateTime ;
+            prov:entity id:45df11a8-a7ae-4fac-8a32-704570ef327a ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high/filter_slide> ] ;
+    prov:wasAssociatedWith id:d57c1f0c-128b-4e39-9c50-9ae96d6d1b0d,
+        id:fea087d1-cbbe-4cda-9bfd-00baa4f33465 .
+
+id:d57c1f0c-128b-4e39-9c50-9ae96d6d1b0d a prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "Container execution of image crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn"^^xsd:string ;
+    cwlprov:image "crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn"^^xsd:string .
+
+<arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/classify-tumor> a wfdesc:Process,
+        prov:Entity,
+        prov:Plan .
+
+<arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-high> a wfdesc:Process,
+        prov:Entity,
+        prov:Plan .
+
+<arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low> a wfdesc:Process,
+        prov:Entity,
+        prov:Plan .
+
+data:0b2b5f414b65f0315615670701c2951670995ae1 a wfprov:Artifact,
+        prov:Entity ;
+    prov:value "tissue_low"^^xsd:string .
+
+data:3c7901bab39947a3402da2687583e4dffb2530f9 a wfprov:Artifact,
+        prov:Entity ;
+    prov:value "tissue_low>0.9"^^xsd:string .
+
+data:869623a779aaf26d38a26e562703f624fa40d29f a wfprov:Artifact,
+        prov:Entity ;
+    prov:value "tissue_high"^^xsd:string .
+
+data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27 a wfprov:Artifact,
+        prov:Entity ;
+    prov:value "tumor"^^xsd:string .
+
+data:ff7335228d2ffbe6347decead594cfc9618968e6 a wfprov:Artifact,
+        prov:Entity ;
+    prov:value "tissue_low>0.99"^^xsd:string .
+
+id:45df11a8-a7ae-4fac-8a32-704570ef327a a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:activity id:54941acd-720a-4ae0-8a3e-f00962de2b43 ;
+            prov:atTime "2022-10-18T11:29:14.566371"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/extract-tissue-low/tissue> ] ;
+    prov:specializationOf data:bf53fa21295d0f7ede7e01eae3f1b996ecccda1e ;
+    cwlprov:basename "tissue_low.zip"^^xsd:string ;
+    cwlprov:nameext ".zip"^^xsd:string ;
+    cwlprov:nameroot "tissue_low"^^xsd:string .
+
+data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852 a wfprov:Artifact,
+        prov:Entity .
+
+id:fea087d1-cbbe-4cda-9bfd-00baa4f33465 a wfprov:WorkflowEngine,
+        prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "cwltool 3.1.20220628170238"^^xsd:string ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-10-18T11:20:55.445788"^^xsd:dateTime ;
+            prov:hadActivity id:ba1e0e3b-bca5-42f7-8308-64cc762ab83b ] .
+
+id:7d4dce94-db7f-4bf9-bfec-99cbdeea92fb a wfprov:WorkflowRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan wf:main ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2022-10-18T11:29:30.375054"^^xsd:dateTime ;
+            prov:hadActivity id:fea087d1-cbbe-4cda-9bfd-00baa4f33465 ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-10-18T11:20:55.445893"^^xsd:dateTime ;
+            prov:hadActivity id:fea087d1-cbbe-4cda-9bfd-00baa4f33465 ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.199792"^^xsd:dateTime ;
+            prov:entity data:3c7901bab39947a3402da2687583e4dffb2530f9 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/tissue-high-filter> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.200175"^^xsd:dateTime ;
+            prov:entity id:6b6b3a91-5724-440d-8e09-f65e09ee411d ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/tissue-high-level> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.200836"^^xsd:dateTime ;
+            prov:entity data:ff7335228d2ffbe6347decead594cfc9618968e6 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/tumor-filter> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.200472"^^xsd:dateTime ;
+            prov:entity data:0b2b5f414b65f0315615670701c2951670995ae1 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/tissue-low-label> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.201134"^^xsd:dateTime ;
+            prov:entity data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/tumor-label> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.199448"^^xsd:dateTime ;
+            prov:entity id:b4de4243-6f83-4a98-b998-1f526c45bf00 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/slide> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.200544"^^xsd:dateTime ;
+            prov:entity id:22efb722-4bd5-472e-ba49-02bb7a8f4384 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/tissue-low-level> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.198917"^^xsd:dateTime ;
+            prov:entity cwlprov:None ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/gpu> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.200098"^^xsd:dateTime ;
+            prov:entity data:869623a779aaf26d38a26e562703f624fa40d29f ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/tissue-high-label> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-10-18T11:21:09.201204"^^xsd:dateTime ;
+            prov:entity id:17b24628-793f-4873-a5f8-d660f8325cb2 ;
+            prov:hadRole <arcp://uuid,7d4dce94-db7f-4bf9-bfec-99cbdeea92fb/workflow/packed.cwl#main/tumor-level> ] ;
+    prov:startedAtTime "2022-10-18T11:20:55.445819"^^xsd:dateTime ;
+    prov:wasAssociatedWith id:fea087d1-cbbe-4cda-9bfd-00baa4f33465 .
+
+cwlprov:None a prov:Entity ;
+    rdfs:label "None"^^xsd:string .
+

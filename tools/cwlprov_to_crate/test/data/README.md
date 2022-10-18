@@ -50,3 +50,8 @@ Output a predefined integer. Used to test support for tools / workflows that tak
 ## type-zoo-run-1
 
 Build a fake command line and write it to the output file (all parameter settings are passed to the echo tool). Used to test support for various parameter types.
+
+
+## predictions-run-1
+
+A cwltool test run of the DeepHealth [tissue/tumor prediction workflow](https://github.com/crs4/deephealth-pipelines/blob/0d09bc091e1f7a9778e4286a22db9e9f8d96a315/cwl/predictions.cwl) split into three separate files (https://github.com/crs4/deephealth-pipelines/pull/53). The workflow is © 2021-2022 CRS4, distributed under the MIT license.
