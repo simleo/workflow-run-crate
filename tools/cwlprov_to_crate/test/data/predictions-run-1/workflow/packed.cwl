@@ -366,11 +366,11 @@
                     "in": [
                         {
                             "source": "#main/tissue-high-batch-size",
-                            "id": "#main/extract-tissue-high/batch"
+                            "id": "#main/extract-tissue-high/batch-size"
                         },
                         {
                             "source": "#main/tissue-high-chunk-size",
-                            "id": "#main/extract-tissue-high/chunk"
+                            "id": "#main/extract-tissue-high/chunk-size"
                         },
                         {
                             "source": "#main/tissue-high-filter",
