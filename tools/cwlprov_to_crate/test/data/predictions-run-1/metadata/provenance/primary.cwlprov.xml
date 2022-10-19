@@ -1,47 +1,47 @@
 <?xml version='1.0' encoding='ASCII'?>
-<prov:document xmlns:wfprov="http://purl.org/wf4ever/wfprov#" xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#" xmlns:cwlprov="https://w3id.org/cwl/prov#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:schema="http://schema.org/" xmlns:orcid="https://orcid.org/" xmlns:id="urn:uuid:" xmlns:data="urn:hash::sha1:" xmlns:sha256="nih:sha-256;" xmlns:researchobject="arcp://uuid,f1361404-bc78-4be0-9b23-4f6748bbd3a0/" xmlns:metadata="arcp://uuid,f1361404-bc78-4be0-9b23-4f6748bbd3a0/metadata/" xmlns:provenance="arcp://uuid,f1361404-bc78-4be0-9b23-4f6748bbd3a0/metadata/provenance/" xmlns:wf="arcp://uuid,f1361404-bc78-4be0-9b23-4f6748bbd3a0/workflow/packed.cwl#" xmlns:input="arcp://uuid,f1361404-bc78-4be0-9b23-4f6748bbd3a0/workflow/primary-job.json#" xmlns:wf4ever="http://purl.org/wf4ever/wf4ever#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <prov:agent prov:id="id:0c07a071-57cc-4f34-9d44-a7756fca225c"/>
-  <prov:softwareAgent prov:id="id:0bbce029-c42f-4411-abfc-b0d7d769b293">
-    <prov:label>cwltool 3.1.20220628170238</prov:label>
+<prov:document xmlns:wfprov="http://purl.org/wf4ever/wfprov#" xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#" xmlns:cwlprov="https://w3id.org/cwl/prov#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:schema="http://schema.org/" xmlns:orcid="https://orcid.org/" xmlns:id="urn:uuid:" xmlns:data="urn:hash::sha1:" xmlns:sha256="nih:sha-256;" xmlns:researchobject="arcp://uuid,3433c8b5-2671-4d4e-9f28-de066705a484/" xmlns:metadata="arcp://uuid,3433c8b5-2671-4d4e-9f28-de066705a484/metadata/" xmlns:provenance="arcp://uuid,3433c8b5-2671-4d4e-9f28-de066705a484/metadata/provenance/" xmlns:wf="arcp://uuid,3433c8b5-2671-4d4e-9f28-de066705a484/workflow/packed.cwl#" xmlns:input="arcp://uuid,3433c8b5-2671-4d4e-9f28-de066705a484/workflow/primary-job.json#" xmlns:wf4ever="http://purl.org/wf4ever/wf4ever#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <prov:agent prov:id="id:a9ac7e2f-0f63-4b90-a389-971dc8f16ff5"/>
+  <prov:softwareAgent prov:id="id:2a50c3f8-caff-4d2a-a970-2e951acbef99">
+    <prov:label>cwltool 3.1.20221018083734</prov:label>
     <prov:type xsi:type="xsd:QName">wfprov:WorkflowEngine</prov:type>
   </prov:softwareAgent>
   <prov:wasStartedBy>
-    <prov:activity prov:ref="id:0bbce029-c42f-4411-abfc-b0d7d769b293"/>
-    <prov:starter prov:ref="id:0c07a071-57cc-4f34-9d44-a7756fca225c"/>
-    <prov:time>2022-10-18T13:03:23.589673</prov:time>
+    <prov:activity prov:ref="id:2a50c3f8-caff-4d2a-a970-2e951acbef99"/>
+    <prov:starter prov:ref="id:a9ac7e2f-0f63-4b90-a389-971dc8f16ff5"/>
+    <prov:time>2022-10-19T10:48:07.770479</prov:time>
   </prov:wasStartedBy>
-  <prov:activity prov:id="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0">
-    <prov:startTime>2022-10-18T13:03:23.589702</prov:startTime>
+  <prov:activity prov:id="id:3433c8b5-2671-4d4e-9f28-de066705a484">
+    <prov:startTime>2022-10-19T10:48:07.770509</prov:startTime>
     <prov:label>Run of workflow/packed.cwl#main</prov:label>
     <prov:type xsi:type="xsd:QName">wfprov:WorkflowRun</prov:type>
   </prov:activity>
   <prov:wasAssociatedWith>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:agent prov:ref="id:0bbce029-c42f-4411-abfc-b0d7d769b293"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:agent prov:ref="id:2a50c3f8-caff-4d2a-a970-2e951acbef99"/>
     <prov:plan prov:ref="wf:main"/>
   </prov:wasAssociatedWith>
   <prov:wasStartedBy>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:starter prov:ref="id:0bbce029-c42f-4411-abfc-b0d7d769b293"/>
-    <prov:time>2022-10-18T13:03:23.589763</prov:time>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:starter prov:ref="id:2a50c3f8-caff-4d2a-a970-2e951acbef99"/>
+    <prov:time>2022-10-19T10:48:07.770571</prov:time>
   </prov:wasStartedBy>
   <prov:plan prov:id="wf:main">
     <prov:label>Prospective provenance</prov:label>
     <prov:type xsi:type="xsd:QName">wfdesc:Workflow</prov:type>
   </prov:plan>
-  <prov:plan prov:id="wf:main/extract-tissue-low">
-    <prov:type xsi:type="xsd:QName">wfdesc:Process</prov:type>
-  </prov:plan>
-  <prov:entity prov:id="wf:main">
-    <prov:label>Prospective provenance</prov:label>
-    <wfdesc:hasSubProcess xsi:type="xsd:QName">wf:main/extract-tissue-low</wfdesc:hasSubProcess>
-  </prov:entity>
   <prov:plan prov:id="wf:main/classify-tumor">
     <prov:type xsi:type="xsd:QName">wfdesc:Process</prov:type>
   </prov:plan>
   <prov:entity prov:id="wf:main">
     <prov:label>Prospective provenance</prov:label>
     <wfdesc:hasSubProcess xsi:type="xsd:QName">wf:main/classify-tumor</wfdesc:hasSubProcess>
+  </prov:entity>
+  <prov:plan prov:id="wf:main/extract-tissue-low">
+    <prov:type xsi:type="xsd:QName">wfdesc:Process</prov:type>
+  </prov:plan>
+  <prov:entity prov:id="wf:main">
+    <prov:label>Prospective provenance</prov:label>
+    <wfdesc:hasSubProcess xsi:type="xsd:QName">wf:main/extract-tissue-low</wfdesc:hasSubProcess>
   </prov:entity>
   <prov:plan prov:id="wf:main/extract-tissue-high">
     <prov:type xsi:type="xsd:QName">wfdesc:Process</prov:type>
@@ -54,15 +54,15 @@
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:28.919284</prov:time>
+    <prov:time>2022-10-19T10:48:16.967109</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/gpu</prov:role>
   </prov:used>
   <prov:entity prov:id="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852">
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
   </prov:entity>
-  <prov:entity prov:id="id:af4f31a8-b510-4561-a2f1-d81de92c9c0e">
+  <prov:entity prov:id="id:54e34afc-0d72-452f-865a-ec5e742c940c">
     <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
     <cwlprov:basename>Mirax2-Fluorescence-2.mrxs</cwlprov:basename>
@@ -70,13 +70,13 @@
     <cwlprov:nameroot>Mirax2-Fluorescence-2</cwlprov:nameroot>
   </prov:entity>
   <prov:specializationOf>
-    <prov:specificEntity prov:ref="id:af4f31a8-b510-4561-a2f1-d81de92c9c0e"/>
+    <prov:specificEntity prov:ref="id:54e34afc-0d72-452f-865a-ec5e742c940c"/>
     <prov:generalEntity prov:ref="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"/>
   </prov:specializationOf>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:entity prov:ref="id:af4f31a8-b510-4561-a2f1-d81de92c9c0e"/>
-    <prov:time>2022-10-18T13:03:28.919801</prov:time>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:entity prov:ref="id:54e34afc-0d72-452f-865a-ec5e742c940c"/>
+    <prov:time>2022-10-19T10:48:16.967629</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/slide</prov:role>
   </prov:used>
   <prov:entity prov:id="data:3c7901bab39947a3402da2687583e4dffb2530f9">
@@ -84,9 +84,9 @@
     <prov:value xsi:type="xsd:string">tissue_low&gt;0.9</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
     <prov:entity prov:ref="data:3c7901bab39947a3402da2687583e4dffb2530f9"/>
-    <prov:time>2022-10-18T13:03:28.920139</prov:time>
+    <prov:time>2022-10-19T10:48:16.967966</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/tissue-high-filter</prov:role>
   </prov:used>
   <prov:entity prov:id="data:869623a779aaf26d38a26e562703f624fa40d29f">
@@ -94,18 +94,18 @@
     <prov:value xsi:type="xsd:string">tissue_high</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
     <prov:entity prov:ref="data:869623a779aaf26d38a26e562703f624fa40d29f"/>
-    <prov:time>2022-10-18T13:03:28.920443</prov:time>
+    <prov:time>2022-10-19T10:48:16.968374</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/tissue-high-label</prov:role>
   </prov:used>
-  <prov:entity prov:id="id:9657d480-320f-461a-b43f-908af2bfc9a7">
+  <prov:entity prov:id="id:ddf64010-2786-4531-aa77-da5e9b757eeb">
     <prov:value xsi:type="xsd:int">4</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:entity prov:ref="id:9657d480-320f-461a-b43f-908af2bfc9a7"/>
-    <prov:time>2022-10-18T13:03:28.920519</prov:time>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:entity prov:ref="id:ddf64010-2786-4531-aa77-da5e9b757eeb"/>
+    <prov:time>2022-10-19T10:48:16.968456</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/tissue-high-level</prov:role>
   </prov:used>
   <prov:entity prov:id="data:0b2b5f414b65f0315615670701c2951670995ae1">
@@ -113,18 +113,18 @@
     <prov:value xsi:type="xsd:string">tissue_low</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
     <prov:entity prov:ref="data:0b2b5f414b65f0315615670701c2951670995ae1"/>
-    <prov:time>2022-10-18T13:03:28.920818</prov:time>
+    <prov:time>2022-10-19T10:48:16.968766</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/tissue-low-label</prov:role>
   </prov:used>
-  <prov:entity prov:id="id:e76759f0-cf59-4942-bf67-e4de1555a3c8">
+  <prov:entity prov:id="id:d035f5f1-c950-41ee-9650-0ee4dd0137e1">
     <prov:value xsi:type="xsd:int">9</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:entity prov:ref="id:e76759f0-cf59-4942-bf67-e4de1555a3c8"/>
-    <prov:time>2022-10-18T13:03:28.920888</prov:time>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:entity prov:ref="id:d035f5f1-c950-41ee-9650-0ee4dd0137e1"/>
+    <prov:time>2022-10-19T10:48:16.968838</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/tissue-low-level</prov:role>
   </prov:used>
   <prov:entity prov:id="data:ff7335228d2ffbe6347decead594cfc9618968e6">
@@ -132,9 +132,9 @@
     <prov:value xsi:type="xsd:string">tissue_low&gt;0.99</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
     <prov:entity prov:ref="data:ff7335228d2ffbe6347decead594cfc9618968e6"/>
-    <prov:time>2022-10-18T13:03:28.921184</prov:time>
+    <prov:time>2022-10-19T10:48:16.969135</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/tumor-filter</prov:role>
   </prov:used>
   <prov:entity prov:id="data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27">
@@ -142,67 +142,67 @@
     <prov:value xsi:type="xsd:string">tumor</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
     <prov:entity prov:ref="data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27"/>
-    <prov:time>2022-10-18T13:03:28.921480</prov:time>
+    <prov:time>2022-10-19T10:48:16.969421</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/tumor-label</prov:role>
   </prov:used>
-  <prov:entity prov:id="id:1dca335e-a79d-4396-9998-d9e9160d6804">
+  <prov:entity prov:id="id:1bd8657d-41d2-4670-997b-ab12af5e24cf">
     <prov:value xsi:type="xsd:int">1</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:entity prov:ref="id:1dca335e-a79d-4396-9998-d9e9160d6804"/>
-    <prov:time>2022-10-18T13:03:28.921554</prov:time>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:entity prov:ref="id:1bd8657d-41d2-4670-997b-ab12af5e24cf"/>
+    <prov:time>2022-10-19T10:48:16.969490</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/tumor-level</prov:role>
   </prov:used>
-  <prov:activity prov:id="id:aae81aa8-180f-4926-b500-5afa93a230b1">
+  <prov:activity prov:id="id:ed80914c-6faa-4301-95b9-abbc99711f7b">
     <prov:label>Run of workflow/packed.cwl#main/extract-tissue-low</prov:label>
     <prov:type xsi:type="xsd:QName">wfprov:ProcessRun</prov:type>
   </prov:activity>
   <prov:wasAssociatedWith>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
-    <prov:agent prov:ref="id:0bbce029-c42f-4411-abfc-b0d7d769b293"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
+    <prov:agent prov:ref="id:2a50c3f8-caff-4d2a-a970-2e951acbef99"/>
     <prov:plan prov:ref="wf:main/extract-tissue-low"/>
   </prov:wasAssociatedWith>
   <prov:wasStartedBy>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
-    <prov:starter prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:time>2022-10-18T13:03:29.430224</prov:time>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
+    <prov:starter prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:time>2022-10-19T10:48:17.427554</prov:time>
   </prov:wasStartedBy>
-  <prov:softwareAgent prov:id="id:10162112-bd00-43af-a087-3e493ae4e151">
+  <prov:softwareAgent prov:id="id:1c02f90d-1aaf-4a2b-a88a-4328e9044819">
     <prov:label>Container execution of image crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn</prov:label>
     <cwlprov:image>crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn</cwlprov:image>
   </prov:softwareAgent>
   <prov:wasAssociatedWith>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
-    <prov:agent prov:ref="id:10162112-bd00-43af-a087-3e493ae4e151"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
+    <prov:agent prov:ref="id:1c02f90d-1aaf-4a2b-a88a-4328e9044819"/>
   </prov:wasAssociatedWith>
   <prov:entity prov:id="cwlprov:None">
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:29.516009</prov:time>
+    <prov:time>2022-10-19T10:48:17.510340</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-low/batch-size</prov:role>
   </prov:used>
   <prov:entity prov:id="cwlprov:None">
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:29.516093</prov:time>
+    <prov:time>2022-10-19T10:48:17.510420</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-low/chunk-size</prov:role>
   </prov:used>
   <prov:entity prov:id="cwlprov:None">
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:29.516134</prov:time>
+    <prov:time>2022-10-19T10:48:17.510460</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-low/gpu</prov:role>
   </prov:used>
   <prov:entity prov:id="data:0b2b5f414b65f0315615670701c2951670995ae1">
@@ -210,24 +210,24 @@
     <prov:value xsi:type="xsd:string">tissue_low</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
     <prov:entity prov:ref="data:0b2b5f414b65f0315615670701c2951670995ae1"/>
-    <prov:time>2022-10-18T13:03:29.516591</prov:time>
+    <prov:time>2022-10-19T10:48:17.510917</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-low/label</prov:role>
   </prov:used>
-  <prov:entity prov:id="id:b73b812c-4473-4de2-8d6f-fd4b5416d15e">
+  <prov:entity prov:id="id:a240e5bf-0a6d-4bf5-9adf-a882c5b5c0ee">
     <prov:value xsi:type="xsd:int">9</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
-    <prov:entity prov:ref="id:b73b812c-4473-4de2-8d6f-fd4b5416d15e"/>
-    <prov:time>2022-10-18T13:03:29.516703</prov:time>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
+    <prov:entity prov:ref="id:a240e5bf-0a6d-4bf5-9adf-a882c5b5c0ee"/>
+    <prov:time>2022-10-19T10:48:17.511026</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-low/level</prov:role>
   </prov:used>
   <prov:entity prov:id="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852">
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
   </prov:entity>
-  <prov:entity prov:id="id:235bfcea-34a5-4233-b558-508390d5b1c1">
+  <prov:entity prov:id="id:e17be6e9-09d5-4093-ab6a-309112584081">
     <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
     <cwlprov:basename>Mirax2-Fluorescence-2.mrxs</cwlprov:basename>
@@ -235,31 +235,31 @@
     <cwlprov:nameroot>Mirax2-Fluorescence-2</cwlprov:nameroot>
   </prov:entity>
   <prov:specializationOf>
-    <prov:specificEntity prov:ref="id:235bfcea-34a5-4233-b558-508390d5b1c1"/>
+    <prov:specificEntity prov:ref="id:e17be6e9-09d5-4093-ab6a-309112584081"/>
     <prov:generalEntity prov:ref="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"/>
   </prov:specializationOf>
   <prov:entity prov:id="cwlprov:None">
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:29.517271</prov:time>
+    <prov:time>2022-10-19T10:48:17.511612</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-low/filter</prov:role>
   </prov:used>
   <prov:entity prov:id="cwlprov:None">
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:29.517319</prov:time>
+    <prov:time>2022-10-19T10:48:17.511656</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-low/filter_slide</prov:role>
   </prov:used>
-  <prov:entity prov:id="data:5861ab2e795799efb6dd401afb8f2e24c021fb8f">
+  <prov:entity prov:id="data:886769ee9c3c6e8ad291b5d98af28c031971aa25">
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
   </prov:entity>
-  <prov:entity prov:id="id:097f12cf-ad5b-47ae-8726-57a70a02588f">
+  <prov:entity prov:id="id:ceec4760-869c-4876-9015-699816564a01">
     <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
     <cwlprov:basename>tissue_low.zip</cwlprov:basename>
@@ -267,181 +267,58 @@
     <cwlprov:nameroot>tissue_low</cwlprov:nameroot>
   </prov:entity>
   <prov:specializationOf>
-    <prov:specificEntity prov:ref="id:097f12cf-ad5b-47ae-8726-57a70a02588f"/>
-    <prov:generalEntity prov:ref="data:5861ab2e795799efb6dd401afb8f2e24c021fb8f"/>
+    <prov:specificEntity prov:ref="id:ceec4760-869c-4876-9015-699816564a01"/>
+    <prov:generalEntity prov:ref="data:886769ee9c3c6e8ad291b5d98af28c031971aa25"/>
   </prov:specializationOf>
   <prov:wasGeneratedBy>
-    <prov:entity prov:ref="id:097f12cf-ad5b-47ae-8726-57a70a02588f"/>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
-    <prov:time>2022-10-18T13:03:30.795290</prov:time>
+    <prov:entity prov:ref="id:ceec4760-869c-4876-9015-699816564a01"/>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
+    <prov:time>2022-10-19T10:48:18.841710</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-low/tissue</prov:role>
   </prov:wasGeneratedBy>
   <prov:wasEndedBy>
-    <prov:activity prov:ref="id:aae81aa8-180f-4926-b500-5afa93a230b1"/>
-    <prov:ender prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:time>2022-10-18T13:03:30.795281</prov:time>
+    <prov:activity prov:ref="id:ed80914c-6faa-4301-95b9-abbc99711f7b"/>
+    <prov:ender prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:time>2022-10-19T10:48:18.841701</prov:time>
   </prov:wasEndedBy>
-  <prov:activity prov:id="id:dc0a8c50-d01d-4060-bfbb-d04015d95686">
-    <prov:label>Run of workflow/packed.cwl#main/classify-tumor</prov:label>
-    <prov:type xsi:type="xsd:QName">wfprov:ProcessRun</prov:type>
-  </prov:activity>
-  <prov:wasAssociatedWith>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:agent prov:ref="id:0bbce029-c42f-4411-abfc-b0d7d769b293"/>
-    <prov:plan prov:ref="wf:main/classify-tumor"/>
-  </prov:wasAssociatedWith>
-  <prov:wasStartedBy>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:starter prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:time>2022-10-18T13:03:30.805517</prov:time>
-  </prov:wasStartedBy>
-  <prov:softwareAgent prov:id="id:6197d0a9-720c-46ea-baca-689140dcc6b5">
-    <prov:label>Container execution of image crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn</prov:label>
-    <cwlprov:image>crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn</cwlprov:image>
-  </prov:softwareAgent>
-  <prov:wasAssociatedWith>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:agent prov:ref="id:6197d0a9-720c-46ea-baca-689140dcc6b5"/>
-  </prov:wasAssociatedWith>
-  <prov:entity prov:id="cwlprov:None">
-    <prov:label>None</prov:label>
-  </prov:entity>
-  <prov:used>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:30.897034</prov:time>
-    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/batch-size</prov:role>
-  </prov:used>
-  <prov:entity prov:id="cwlprov:None">
-    <prov:label>None</prov:label>
-  </prov:entity>
-  <prov:used>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:30.897121</prov:time>
-    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/chunk-size</prov:role>
-  </prov:used>
-  <prov:entity prov:id="data:ff7335228d2ffbe6347decead594cfc9618968e6">
-    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
-    <prov:value xsi:type="xsd:string">tissue_low&gt;0.99</prov:value>
-  </prov:entity>
-  <prov:used>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:entity prov:ref="data:ff7335228d2ffbe6347decead594cfc9618968e6"/>
-    <prov:time>2022-10-18T13:03:30.897613</prov:time>
-    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/filter</prov:role>
-  </prov:used>
-  <prov:used>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:entity prov:ref="id:097f12cf-ad5b-47ae-8726-57a70a02588f"/>
-    <prov:time>2022-10-18T13:03:30.897692</prov:time>
-    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/filter_slide</prov:role>
-  </prov:used>
-  <prov:entity prov:id="cwlprov:None">
-    <prov:label>None</prov:label>
-  </prov:entity>
-  <prov:used>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:30.897735</prov:time>
-    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/gpu</prov:role>
-  </prov:used>
-  <prov:entity prov:id="data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27">
-    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
-    <prov:value xsi:type="xsd:string">tumor</prov:value>
-  </prov:entity>
-  <prov:used>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:entity prov:ref="data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27"/>
-    <prov:time>2022-10-18T13:03:30.898031</prov:time>
-    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/label</prov:role>
-  </prov:used>
-  <prov:entity prov:id="id:128b83ca-2ad6-4904-b9f3-45b255392569">
-    <prov:value xsi:type="xsd:int">1</prov:value>
-  </prov:entity>
-  <prov:used>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:entity prov:ref="id:128b83ca-2ad6-4904-b9f3-45b255392569"/>
-    <prov:time>2022-10-18T13:03:30.898140</prov:time>
-    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/level</prov:role>
-  </prov:used>
-  <prov:entity prov:id="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852">
-    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
-  </prov:entity>
-  <prov:entity prov:id="id:a11f8ac6-fd38-42ce-967c-89683c9e504c">
-    <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
-    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
-    <cwlprov:basename>Mirax2-Fluorescence-2.mrxs</cwlprov:basename>
-    <cwlprov:nameext>.mrxs</cwlprov:nameext>
-    <cwlprov:nameroot>Mirax2-Fluorescence-2</cwlprov:nameroot>
-  </prov:entity>
-  <prov:specializationOf>
-    <prov:specificEntity prov:ref="id:a11f8ac6-fd38-42ce-967c-89683c9e504c"/>
-    <prov:generalEntity prov:ref="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"/>
-  </prov:specializationOf>
-  <prov:entity prov:id="data:b5d10b8d86c0cdbceacabad318fb1f95846284f0">
-    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
-  </prov:entity>
-  <prov:entity prov:id="id:a4b01313-9ead-4196-835a-b8032fea89c7">
-    <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
-    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
-    <cwlprov:basename>tumor.zip</cwlprov:basename>
-    <cwlprov:nameext>.zip</cwlprov:nameext>
-    <cwlprov:nameroot>tumor</cwlprov:nameroot>
-  </prov:entity>
-  <prov:specializationOf>
-    <prov:specificEntity prov:ref="id:a4b01313-9ead-4196-835a-b8032fea89c7"/>
-    <prov:generalEntity prov:ref="data:b5d10b8d86c0cdbceacabad318fb1f95846284f0"/>
-  </prov:specializationOf>
-  <prov:wasGeneratedBy>
-    <prov:entity prov:ref="id:a4b01313-9ead-4196-835a-b8032fea89c7"/>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:time>2022-10-18T13:03:39.946492</prov:time>
-    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/tumor</prov:role>
-  </prov:wasGeneratedBy>
-  <prov:wasEndedBy>
-    <prov:activity prov:ref="id:dc0a8c50-d01d-4060-bfbb-d04015d95686"/>
-    <prov:ender prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:time>2022-10-18T13:03:39.946483</prov:time>
-  </prov:wasEndedBy>
-  <prov:activity prov:id="id:fd738aed-0d88-4e56-8b0e-5231a63bd608">
+  <prov:activity prov:id="id:2080d9ee-10a3-4d6a-9627-62db001b087a">
     <prov:label>Run of workflow/packed.cwl#main/extract-tissue-high</prov:label>
     <prov:type xsi:type="xsd:QName">wfprov:ProcessRun</prov:type>
   </prov:activity>
   <prov:wasAssociatedWith>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
-    <prov:agent prov:ref="id:0bbce029-c42f-4411-abfc-b0d7d769b293"/>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
+    <prov:agent prov:ref="id:2a50c3f8-caff-4d2a-a970-2e951acbef99"/>
     <prov:plan prov:ref="wf:main/extract-tissue-high"/>
   </prov:wasAssociatedWith>
   <prov:wasStartedBy>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
-    <prov:starter prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:time>2022-10-18T13:03:39.957043</prov:time>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
+    <prov:starter prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:time>2022-10-19T10:48:18.852254</prov:time>
   </prov:wasStartedBy>
-  <prov:softwareAgent prov:id="id:2946c21a-5efc-4794-931b-5fa485034fc7">
+  <prov:softwareAgent prov:id="id:d06bacbc-e2c8-44ad-9676-7945dc9a1e06">
     <prov:label>Container execution of image crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn</prov:label>
     <cwlprov:image>crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn</cwlprov:image>
   </prov:softwareAgent>
   <prov:wasAssociatedWith>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
-    <prov:agent prov:ref="id:2946c21a-5efc-4794-931b-5fa485034fc7"/>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
+    <prov:agent prov:ref="id:d06bacbc-e2c8-44ad-9676-7945dc9a1e06"/>
   </prov:wasAssociatedWith>
   <prov:entity prov:id="cwlprov:None">
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:39.963838</prov:time>
+    <prov:time>2022-10-19T10:48:18.858007</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-high/batch-size</prov:role>
   </prov:used>
   <prov:entity prov:id="cwlprov:None">
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:39.963924</prov:time>
+    <prov:time>2022-10-19T10:48:18.858097</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-high/chunk-size</prov:role>
   </prov:used>
   <prov:entity prov:id="data:3c7901bab39947a3402da2687583e4dffb2530f9">
@@ -449,24 +326,24 @@
     <prov:value xsi:type="xsd:string">tissue_low&gt;0.9</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
     <prov:entity prov:ref="data:3c7901bab39947a3402da2687583e4dffb2530f9"/>
-    <prov:time>2022-10-18T13:03:39.964409</prov:time>
+    <prov:time>2022-10-19T10:48:18.858582</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-high/filter</prov:role>
   </prov:used>
   <prov:used>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
-    <prov:entity prov:ref="id:097f12cf-ad5b-47ae-8726-57a70a02588f"/>
-    <prov:time>2022-10-18T13:03:39.964483</prov:time>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
+    <prov:entity prov:ref="id:ceec4760-869c-4876-9015-699816564a01"/>
+    <prov:time>2022-10-19T10:48:18.858728</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-high/filter_slide</prov:role>
   </prov:used>
   <prov:entity prov:id="cwlprov:None">
     <prov:label>None</prov:label>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
     <prov:entity prov:ref="cwlprov:None"/>
-    <prov:time>2022-10-18T13:03:39.964526</prov:time>
+    <prov:time>2022-10-19T10:48:18.858775</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-high/gpu</prov:role>
   </prov:used>
   <prov:entity prov:id="data:869623a779aaf26d38a26e562703f624fa40d29f">
@@ -474,24 +351,24 @@
     <prov:value xsi:type="xsd:string">tissue_high</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
     <prov:entity prov:ref="data:869623a779aaf26d38a26e562703f624fa40d29f"/>
-    <prov:time>2022-10-18T13:03:39.964800</prov:time>
+    <prov:time>2022-10-19T10:48:18.859059</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-high/label</prov:role>
   </prov:used>
-  <prov:entity prov:id="id:b640b92d-d99c-40a8-a375-19224499716f">
+  <prov:entity prov:id="id:8ef31fcb-0762-480d-87cf-0e53de08ffbb">
     <prov:value xsi:type="xsd:int">4</prov:value>
   </prov:entity>
   <prov:used>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
-    <prov:entity prov:ref="id:b640b92d-d99c-40a8-a375-19224499716f"/>
-    <prov:time>2022-10-18T13:03:39.964911</prov:time>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
+    <prov:entity prov:ref="id:8ef31fcb-0762-480d-87cf-0e53de08ffbb"/>
+    <prov:time>2022-10-19T10:48:18.859171</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-high/level</prov:role>
   </prov:used>
   <prov:entity prov:id="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852">
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
   </prov:entity>
-  <prov:entity prov:id="id:e4a91390-f045-4211-a646-388e50df42a4">
+  <prov:entity prov:id="id:bc030722-93a5-401f-9112-eee0b1962c11">
     <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
     <cwlprov:basename>Mirax2-Fluorescence-2.mrxs</cwlprov:basename>
@@ -499,13 +376,13 @@
     <cwlprov:nameroot>Mirax2-Fluorescence-2</cwlprov:nameroot>
   </prov:entity>
   <prov:specializationOf>
-    <prov:specificEntity prov:ref="id:e4a91390-f045-4211-a646-388e50df42a4"/>
+    <prov:specificEntity prov:ref="id:bc030722-93a5-401f-9112-eee0b1962c11"/>
     <prov:generalEntity prov:ref="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"/>
   </prov:specializationOf>
-  <prov:entity prov:id="data:dfc65c0c391a67316f5fbd7af2186cb384810b99">
+  <prov:entity prov:id="data:ef44c9c3c903c9b463c98e27c297de6f3f21bd57">
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
   </prov:entity>
-  <prov:entity prov:id="id:7a7810fc-12e4-4c9b-b619-794bb1ce61c4">
+  <prov:entity prov:id="id:efbb62c4-78f3-4582-92aa-2325a627911c">
     <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
     <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
     <cwlprov:basename>tissue_high.zip</cwlprov:basename>
@@ -513,35 +390,158 @@
     <cwlprov:nameroot>tissue_high</cwlprov:nameroot>
   </prov:entity>
   <prov:specializationOf>
-    <prov:specificEntity prov:ref="id:7a7810fc-12e4-4c9b-b619-794bb1ce61c4"/>
-    <prov:generalEntity prov:ref="data:dfc65c0c391a67316f5fbd7af2186cb384810b99"/>
+    <prov:specificEntity prov:ref="id:efbb62c4-78f3-4582-92aa-2325a627911c"/>
+    <prov:generalEntity prov:ref="data:ef44c9c3c903c9b463c98e27c297de6f3f21bd57"/>
   </prov:specializationOf>
   <prov:wasGeneratedBy>
-    <prov:entity prov:ref="id:7a7810fc-12e4-4c9b-b619-794bb1ce61c4"/>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
-    <prov:time>2022-10-18T13:03:41.540818</prov:time>
+    <prov:entity prov:ref="id:efbb62c4-78f3-4582-92aa-2325a627911c"/>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
+    <prov:time>2022-10-19T10:48:20.405031</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/extract-tissue-high/tissue</prov:role>
   </prov:wasGeneratedBy>
   <prov:wasEndedBy>
-    <prov:activity prov:ref="id:fd738aed-0d88-4e56-8b0e-5231a63bd608"/>
-    <prov:ender prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:time>2022-10-18T13:03:41.540807</prov:time>
+    <prov:activity prov:ref="id:2080d9ee-10a3-4d6a-9627-62db001b087a"/>
+    <prov:ender prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:time>2022-10-19T10:48:20.405020</prov:time>
+  </prov:wasEndedBy>
+  <prov:activity prov:id="id:4b1d0e38-5ada-42e4-91d9-954b21c45861">
+    <prov:label>Run of workflow/packed.cwl#main/classify-tumor</prov:label>
+    <prov:type xsi:type="xsd:QName">wfprov:ProcessRun</prov:type>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:agent prov:ref="id:2a50c3f8-caff-4d2a-a970-2e951acbef99"/>
+    <prov:plan prov:ref="wf:main/classify-tumor"/>
+  </prov:wasAssociatedWith>
+  <prov:wasStartedBy>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:starter prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:time>2022-10-19T10:48:20.423194</prov:time>
+  </prov:wasStartedBy>
+  <prov:softwareAgent prov:id="id:ec73b0e2-5050-46d9-83b9-d156818bdd75">
+    <prov:label>Container execution of image crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn</prov:label>
+    <cwlprov:image>crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn</cwlprov:image>
+  </prov:softwareAgent>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:agent prov:ref="id:ec73b0e2-5050-46d9-83b9-d156818bdd75"/>
+  </prov:wasAssociatedWith>
+  <prov:entity prov:id="cwlprov:None">
+    <prov:label>None</prov:label>
+  </prov:entity>
+  <prov:used>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:entity prov:ref="cwlprov:None"/>
+    <prov:time>2022-10-19T10:48:20.517058</prov:time>
+    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/batch-size</prov:role>
+  </prov:used>
+  <prov:entity prov:id="cwlprov:None">
+    <prov:label>None</prov:label>
+  </prov:entity>
+  <prov:used>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:entity prov:ref="cwlprov:None"/>
+    <prov:time>2022-10-19T10:48:20.517142</prov:time>
+    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/chunk-size</prov:role>
+  </prov:used>
+  <prov:entity prov:id="data:ff7335228d2ffbe6347decead594cfc9618968e6">
+    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
+    <prov:value xsi:type="xsd:string">tissue_low&gt;0.99</prov:value>
+  </prov:entity>
+  <prov:used>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:entity prov:ref="data:ff7335228d2ffbe6347decead594cfc9618968e6"/>
+    <prov:time>2022-10-19T10:48:20.517589</prov:time>
+    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/filter</prov:role>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:entity prov:ref="id:ceec4760-869c-4876-9015-699816564a01"/>
+    <prov:time>2022-10-19T10:48:20.517671</prov:time>
+    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/filter_slide</prov:role>
+  </prov:used>
+  <prov:entity prov:id="cwlprov:None">
+    <prov:label>None</prov:label>
+  </prov:entity>
+  <prov:used>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:entity prov:ref="cwlprov:None"/>
+    <prov:time>2022-10-19T10:48:20.517715</prov:time>
+    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/gpu</prov:role>
+  </prov:used>
+  <prov:entity prov:id="data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27">
+    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
+    <prov:value xsi:type="xsd:string">tumor</prov:value>
+  </prov:entity>
+  <prov:used>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:entity prov:ref="data:aa3939a63ace95f5ffeab3d1798d49b5adbe9e27"/>
+    <prov:time>2022-10-19T10:48:20.517991</prov:time>
+    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/label</prov:role>
+  </prov:used>
+  <prov:entity prov:id="id:c275c10a-bad7-4f90-9826-2e07d39a7907">
+    <prov:value xsi:type="xsd:int">1</prov:value>
+  </prov:entity>
+  <prov:used>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:entity prov:ref="id:c275c10a-bad7-4f90-9826-2e07d39a7907"/>
+    <prov:time>2022-10-19T10:48:20.518096</prov:time>
+    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/level</prov:role>
+  </prov:used>
+  <prov:entity prov:id="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852">
+    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="id:ccafb682-f123-40ae-bfc7-0e55091fc3bb">
+    <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
+    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
+    <cwlprov:basename>Mirax2-Fluorescence-2.mrxs</cwlprov:basename>
+    <cwlprov:nameext>.mrxs</cwlprov:nameext>
+    <cwlprov:nameroot>Mirax2-Fluorescence-2</cwlprov:nameroot>
+  </prov:entity>
+  <prov:specializationOf>
+    <prov:specificEntity prov:ref="id:ccafb682-f123-40ae-bfc7-0e55091fc3bb"/>
+    <prov:generalEntity prov:ref="data:f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"/>
+  </prov:specializationOf>
+  <prov:entity prov:id="data:7371c0c259be8bfa57100aa62ad499b16a22ff2c">
+    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="id:8bd46632-f320-4699-9855-04237639078b">
+    <prov:type xsi:type="xsd:QName">wf4ever:File</prov:type>
+    <prov:type xsi:type="xsd:QName">wfprov:Artifact</prov:type>
+    <cwlprov:basename>tumor.zip</cwlprov:basename>
+    <cwlprov:nameext>.zip</cwlprov:nameext>
+    <cwlprov:nameroot>tumor</cwlprov:nameroot>
+  </prov:entity>
+  <prov:specializationOf>
+    <prov:specificEntity prov:ref="id:8bd46632-f320-4699-9855-04237639078b"/>
+    <prov:generalEntity prov:ref="data:7371c0c259be8bfa57100aa62ad499b16a22ff2c"/>
+  </prov:specializationOf>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="id:8bd46632-f320-4699-9855-04237639078b"/>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:time>2022-10-19T10:48:30.412714</prov:time>
+    <prov:role xsi:type="xsd:QName">wf:main/classify-tumor/tumor</prov:role>
+  </prov:wasGeneratedBy>
+  <prov:wasEndedBy>
+    <prov:activity prov:ref="id:4b1d0e38-5ada-42e4-91d9-954b21c45861"/>
+    <prov:ender prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:time>2022-10-19T10:48:30.412701</prov:time>
   </prov:wasEndedBy>
   <prov:wasGeneratedBy>
-    <prov:entity prov:ref="id:7a7810fc-12e4-4c9b-b619-794bb1ce61c4"/>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:time>2022-10-18T13:03:41.551737</prov:time>
+    <prov:entity prov:ref="id:efbb62c4-78f3-4582-92aa-2325a627911c"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:time>2022-10-19T10:48:30.416459</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/primary/tissue</prov:role>
   </prov:wasGeneratedBy>
   <prov:wasGeneratedBy>
-    <prov:entity prov:ref="id:a4b01313-9ead-4196-835a-b8032fea89c7"/>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:time>2022-10-18T13:03:41.551737</prov:time>
+    <prov:entity prov:ref="id:8bd46632-f320-4699-9855-04237639078b"/>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:time>2022-10-19T10:48:30.416459</prov:time>
     <prov:role xsi:type="xsd:QName">wf:main/primary/tumor</prov:role>
   </prov:wasGeneratedBy>
   <prov:wasEndedBy>
-    <prov:activity prov:ref="id:f1361404-bc78-4be0-9b23-4f6748bbd3a0"/>
-    <prov:ender prov:ref="id:0bbce029-c42f-4411-abfc-b0d7d769b293"/>
-    <prov:time>2022-10-18T13:03:41.551858</prov:time>
+    <prov:activity prov:ref="id:3433c8b5-2671-4d4e-9f28-de066705a484"/>
+    <prov:ender prov:ref="id:2a50c3f8-caff-4d2a-a970-2e951acbef99"/>
+    <prov:time>2022-10-19T10:48:30.416599</prov:time>
   </prov:wasEndedBy>
 </prov:document>
