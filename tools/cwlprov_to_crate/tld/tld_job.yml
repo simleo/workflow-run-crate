@@ -1,0 +1,3 @@
+hostnames:
+  class: File
+  location: hostnames.txt
