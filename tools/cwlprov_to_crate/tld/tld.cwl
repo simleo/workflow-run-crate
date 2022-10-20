@@ -30,7 +30,7 @@ steps:
     run: revtool.cwl
   sorted:
     in:
-      sort_in: rev2/rev_out
+      sort_in: rev1/rev_out
       reverse: reverse_sort
     out: [sort_out]
     run: sorttool.cwl
