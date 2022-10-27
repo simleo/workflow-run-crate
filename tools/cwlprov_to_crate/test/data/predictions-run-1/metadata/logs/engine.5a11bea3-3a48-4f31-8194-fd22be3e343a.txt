@@ -1,0 +1,110 @@
+[2022-10-27T13:10:56,72.689056Z] [cwltool] /tmp/venv/bin/cwltool --provenance ro predictions.cwl params.yaml
+[2022-10-27T13:10:56,74.266434Z] Resolved 'predictions.cwl' to 'file:///tmp/deephealth-run-rocrate/predictions.cwl'
+[2022-10-27T13:11:01,154.974461Z] [provenance] Adding to RO file:///tmp/deephealth-run-rocrate/data/Mirax2-Fluorescence-2.mrxs
+[2022-10-27T13:11:01,155.869722Z] [provenance] Adding to RO file:///tmp/deephealth-run-rocrate/data//Mirax2-Fluorescence-2
+[2022-10-27T13:11:01,159.644365Z] [workflow ] start
+[2022-10-27T13:11:01,160.224915Z] [workflow ] starting step extract-tissue-low
+[2022-10-27T13:11:01,160.437107Z] [step extract-tissue-low] start
+[2022-10-27T13:11:01,246.732950Z] [job extract-tissue-low] /tmp/76x1mvnh$ docker \
+    run \
+    -i \
+    --mount=type=bind,source=/tmp/76x1mvnh,target=/PRdXQt \
+    --mount=type=bind,source=/tmp/u0kqtha8,target=/tmp \
+    --mount=type=bind,source=/tmp/deephealth-run-rocrate/data/Mirax2-Fluorescence-2.mrxs,target=/PRdXQt/Mirax2-Fluorescence-2.mrxs,readonly \
+    --mount=type=bind,source=/tmp/deephealth-run-rocrate/data//Mirax2-Fluorescence-2,target=/PRdXQt/Mirax2-Fluorescence-2,readonly \
+    --workdir=/PRdXQt \
+    --read-only=true \
+    --net=none \
+    --user=1000:1000 \
+    --rm \
+    --cidfile=/tmp/hna8iab7/20221027151101-246540.cid \
+    --env=TMPDIR=/tmp \
+    --env=HOME=/PRdXQt \
+    crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn \
+    fixed-batch \
+    -o \
+    /PRdXQt \
+    --writer \
+    zip \
+    -L \
+    tissue_low \
+    -l \
+    9 \
+    /PRdXQt/Mirax2-Fluorescence-2.mrxs
+[2022-10-27T13:11:02,997.681379Z] [job extract-tissue-low] Max memory used: 31MiB
+[2022-10-27T13:11:03,4.704714Z] [job extract-tissue-low] completed success
+[2022-10-27T13:11:03,4.857302Z] [step extract-tissue-low] completed success
+[2022-10-27T13:11:03,5.416155Z] [workflow ] starting step classify-tumor
+[2022-10-27T13:11:03,5.639076Z] [step classify-tumor] start
+[2022-10-27T13:11:03,93.120813Z] [job classify-tumor] /tmp/kzrm1kzx$ docker \
+    run \
+    -i \
+    --mount=type=bind,source=/tmp/kzrm1kzx,target=/PRdXQt \
+    --mount=type=bind,source=/tmp/8nbvped_,target=/tmp \
+    --mount=type=bind,source=/tmp/76x1mvnh/Mirax2-Fluorescence-2.mrxs.zip,target=/var/lib/cwl/stgca6896dd-187e-4480-afa3-3bb34a2aadf8/tissue_low.zip,readonly \
+    --mount=type=bind,source=/tmp/deephealth-run-rocrate/data/Mirax2-Fluorescence-2.mrxs,target=/PRdXQt/Mirax2-Fluorescence-2.mrxs,readonly \
+    --mount=type=bind,source=/tmp/deephealth-run-rocrate/data//Mirax2-Fluorescence-2,target=/PRdXQt/Mirax2-Fluorescence-2,readonly \
+    --workdir=/PRdXQt \
+    --read-only=true \
+    --net=none \
+    --user=1000:1000 \
+    --rm \
+    --cidfile=/tmp/1offjcnp/20221027151103-092927.cid \
+    --env=TMPDIR=/tmp \
+    --env=HOME=/PRdXQt \
+    crs4/slaid:1.1.0-beta.25-tumor_model-level_1-v2.2-cudnn \
+    fixed-batch \
+    -o \
+    /PRdXQt \
+    --writer \
+    zip \
+    -F \
+    'tissue_low>0.99' \
+    --filter-slide \
+    /var/lib/cwl/stgca6896dd-187e-4480-afa3-3bb34a2aadf8/tissue_low.zip \
+    -L \
+    tumor \
+    -l \
+    1 \
+    /PRdXQt/Mirax2-Fluorescence-2.mrxs
+[2022-10-27T13:11:13,591.368675Z] [job classify-tumor] Max memory used: 4776MiB
+[2022-10-27T13:11:13,597.107172Z] [job classify-tumor] completed success
+[2022-10-27T13:11:13,597.265005Z] [step classify-tumor] completed success
+[2022-10-27T13:11:13,597.816467Z] [workflow ] starting step extract-tissue-high
+[2022-10-27T13:11:13,598.832369Z] [step extract-tissue-high] start
+[2022-10-27T13:11:13,613.375664Z] [job extract-tissue-high] /tmp/qi1dgtpf$ docker \
+    run \
+    -i \
+    --mount=type=bind,source=/tmp/qi1dgtpf,target=/PRdXQt \
+    --mount=type=bind,source=/tmp/xjra226b,target=/tmp \
+    --mount=type=bind,source=/tmp/76x1mvnh/Mirax2-Fluorescence-2.mrxs.zip,target=/var/lib/cwl/stg02648619-76ea-4475-8b29-2cc81208329b/tissue_low.zip,readonly \
+    --mount=type=bind,source=/tmp/deephealth-run-rocrate/data/Mirax2-Fluorescence-2.mrxs,target=/PRdXQt/Mirax2-Fluorescence-2.mrxs,readonly \
+    --mount=type=bind,source=/tmp/deephealth-run-rocrate/data//Mirax2-Fluorescence-2,target=/PRdXQt/Mirax2-Fluorescence-2,readonly \
+    --workdir=/PRdXQt \
+    --read-only=true \
+    --net=none \
+    --user=1000:1000 \
+    --rm \
+    --cidfile=/tmp/xdaid5yd/20221027151113-613024.cid \
+    --env=TMPDIR=/tmp \
+    --env=HOME=/PRdXQt \
+    crs4/slaid:1.1.0-beta.25-tissue_model-eddl_2-cudnn \
+    fixed-batch \
+    -o \
+    /PRdXQt \
+    --writer \
+    zip \
+    -F \
+    'tissue_low>0.9' \
+    --filter-slide \
+    /var/lib/cwl/stg02648619-76ea-4475-8b29-2cc81208329b/tissue_low.zip \
+    -L \
+    tissue_high \
+    -l \
+    4 \
+    /PRdXQt/Mirax2-Fluorescence-2.mrxs
+[2022-10-27T13:11:15,92.298746Z] [job extract-tissue-high] Max memory used: 0MiB
+[2022-10-27T13:11:15,116.565466Z] [job extract-tissue-high] completed success
+[2022-10-27T13:11:15,116.734505Z] [step extract-tissue-high] completed success
+[2022-10-27T13:11:15,116.933107Z] [workflow ] completed success
+[2022-10-27T13:11:15,226.886988Z] Final process status is success

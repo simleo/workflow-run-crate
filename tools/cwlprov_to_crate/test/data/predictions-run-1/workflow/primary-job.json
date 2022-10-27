@@ -6,6 +6,15 @@
         "basename": "Mirax2-Fluorescence-2.mrxs",
         "nameroot": "Mirax2-Fluorescence-2",
         "nameext": ".mrxs",
+        "secondaryFiles": [
+            {
+                "class": "File",
+                "location": "file:///tmp/deephealth-run-rocrate/data//Mirax2-Fluorescence-2",
+                "basename": "Mirax2-Fluorescence-2",
+                "nameroot": "Mirax2-Fluorescence-2",
+                "nameext": ""
+            }
+        ],
         "checksum": "sha1$f62aa607a75508ac5fc6a22e9c0e39ef58a2c852"
     },
     "tissue-low-level": 9,

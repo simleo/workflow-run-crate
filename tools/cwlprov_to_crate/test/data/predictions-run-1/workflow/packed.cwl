@@ -220,6 +220,11 @@
         },
         {
             "class": "Workflow",
+            "requirements": [
+                {
+                    "class": "InlineJavascriptRequirement"
+                }
+            ],
             "inputs": [
                 {
                     "type": [
@@ -230,6 +235,12 @@
                 },
                 {
                     "type": "File",
+                    "secondaryFiles": [
+                        {
+                            "pattern": "${\n  if (self.nameext == '.mrxs') {\n    return {\n    class: \"File\",\n    location: self.location.match(/.*\\//)[0] + \"/\" + self.nameroot,\n    basename: self.nameroot};\n  }\n  else return null;\n}",
+                            "required": false
+                        }
+                    ],
                     "id": "#main/slide"
                 },
                 {
