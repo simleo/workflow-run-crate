@@ -81,9 +81,6 @@
                     "@id": "#dataset_collection-10"
                 },
                 {
-                    "@id": "#dataset_collection-13"
-                },
-                {
                     "@id": "#27819d09-7b13-425c-8520-32818449197e"
                 }
             ]
@@ -107,9 +104,6 @@
             "@id": "datasets/Concatenate_dataset_collection_(for_test_workflows)_on_data_46,_data_45,_and_others_48.txt",
             "@type": "File",
             "encodingFormat": "text/plain",
-            "exampleOfWork": {
-                "@id": "#eabc423a-227e-4096-8e14-74d0088c8ef9"
-            },
             "name": "Concatenate dataset collection (for test workflows) on data 46, data 45, and others"
         },
         {
@@ -125,33 +119,23 @@
             "@id": "datasets/hello_33.txt",
             "@type": "File",
             "encodingFormat": "text/plain",
-            "exampleOfWork": {
-                "@id": "#d4e573fa-227f-4cdc-94a0-ac959de105e7"
-            },
             "name": "hello"
         },
         {
             "@id": "datasets/world_34.txt",
             "@type": "File",
             "encodingFormat": "text/plain",
-            "exampleOfWork": {
-                "@id": "#369edbf0-e16a-45d8-bad8-b0ecb4f566a2"
-            },
             "name": "world"
         },
         {
             "@id": "datasets/universe_31.txt",
             "@type": "File",
             "encodingFormat": "text/plain",
-            "exampleOfWork": {
-                "@id": "#ba8af7ec-ef40-405a-bcc4-33c2df9fffed"
-            },
             "name": "universe"
         },
         {
             "@id": "#dataset_collection-11",
             "@type": "Collection",
-            "additionalType": "list",
             "hasPart": [
                 {
                     "@id": "datasets/hello_33.txt"
@@ -160,12 +144,14 @@
                     "@id": "datasets/world_34.txt"
                 }
             ],
+            "exampleOfWork": {
+                "@id": "#collection1-param"
+            },
             "name": "hello_world"
         },
         {
             "@id": "#dataset_collection-10",
             "@type": "Collection",
-            "additionalType": "list",
             "hasPart": [
                 {
                     "@id": "datasets/hello_33.txt"
@@ -174,27 +160,10 @@
                     "@id": "datasets/universe_31.txt"
                 }
             ],
+            "exampleOfWork": {
+                "@id": "#collection2-param"
+            },
             "name": "hello_universe"
-        },
-        {
-            "@id": "#dataset_collection-13",
-            "@type": "Collection",
-            "additionalType": "list",
-            "hasPart": [
-                {
-                    "@id": "datasets/hello_33.txt"
-                },
-                {
-                    "@id": "datasets/world_34.txt"
-                },
-                {
-                    "@id": "datasets/hello_33.txt"
-                },
-                {
-                    "@id": "datasets/universe_31.txt"
-                }
-            ],
-            "name": "data 31, data 30, and others (merged)"
         },
         {
             "@id": "workflows/6f27e6c317d4fa15.abstract.cwl",
@@ -264,31 +233,25 @@
                 "SoftwareSourceCode",
                 "ComputationalWorkflow"
             ],
+            "subjectOf": {
+                "@id": "workflows/6f27e6c317d4fa15.abstract.cwl"
+            },
             "input": [
                 {
                     "@id": "#lineNum-param"
                 },
                 {
-                    "@id": "#d4e573fa-227f-4cdc-94a0-ac959de105e7"
-                },
-                {
-                    "@id": "#ba8af7ec-ef40-405a-bcc4-33c2df9fffed"
-                },
-                {
-                    "@id": "#369edbf0-e16a-45d8-bad8-b0ecb4f566a2"
-                },
-                {
                     "@id": "#advanced-param"
                 },
                 {
-                    "@id": "#eabc423a-227e-4096-8e14-74d0088c8ef9"
+                    "@id": "#collection1-param"
+                },
+                {
+                    "@id": "#collection2-param"
                 }
             ],
             "name": "collection_workflow",
             "output": [
-                {
-                    "@id": "#eabc423a-227e-4096-8e14-74d0088c8ef9"
-                },
                 {
                     "@id": "#4a0f4078-5aff-4e02-9f9c-4ad510050e54"
                 }
@@ -411,27 +374,6 @@
             "valueRequired": "True"
         },
         {
-            "@id": "#d4e573fa-227f-4cdc-94a0-ac959de105e7",
-            "@type": "FormalParameter",
-            "additionalType": "File",
-            "description": "uploaded txt file",
-            "name": "input13"
-        },
-        {
-            "@id": "#ba8af7ec-ef40-405a-bcc4-33c2df9fffed",
-            "@type": "FormalParameter",
-            "additionalType": "File",
-            "description": "uploaded txt file",
-            "name": "input14"
-        },
-        {
-            "@id": "#369edbf0-e16a-45d8-bad8-b0ecb4f566a2",
-            "@type": "FormalParameter",
-            "additionalType": "File",
-            "description": "uploaded txt file",
-            "name": "input12"
-        },
-        {
             "@id": "#advanced-pv",
             "@type": "PropertyValue",
             "exampleOfWork": {
@@ -449,18 +391,23 @@
             "valueRequired": "True"
         },
         {
-            "@id": "#eabc423a-227e-4096-8e14-74d0088c8ef9",
-            "@type": "FormalParameter",
-            "additionalType": "File",
-            "description": "",
-            "name": "input"
-        },
-        {
             "@id": "#4a0f4078-5aff-4e02-9f9c-4ad510050e54",
             "@type": "FormalParameter",
             "additionalType": "File",
             "description": "",
             "name": "out_file1"
+        },
+        {
+            "@id": "#collection1-param",
+            "@type": "FormalParameter",
+            "additionalType": "Collection",
+            "name": "collection 1"
+        },
+        {
+            "@id": "#collection2-param",
+            "@type": "FormalParameter",
+            "additionalType": "Collection",
+            "name": "collection 2"
         },
         {
             "@id": "#27819d09-7b13-425c-8520-32818449197e",
@@ -475,40 +422,16 @@
                     "@id": "#lineNum-pv"
                 },
                 {
-                    "@id": "datasets/hello_33.txt"
-                },
-                {
-                    "@id": "datasets/universe_31.txt"
-                },
-                {
-                    "@id": "datasets/hello_33.txt"
-                },
-                {
-                    "@id": "datasets/world_34.txt"
-                },
-                {
                     "@id": "#advanced-pv"
                 },
                 {
-                    "@id": "datasets/hello_33.txt"
+                    "@id": "#dataset_collection-11"
                 },
                 {
-                    "@id": "datasets/world_34.txt"
-                },
-                {
-                    "@id": "datasets/hello_33.txt"
-                },
-                {
-                    "@id": "datasets/universe_31.txt"
-                },
-                {
-                    "@id": "datasets/Concatenate_dataset_collection_(for_test_workflows)_on_data_46,_data_45,_and_others_48.txt"
+                    "@id": "#dataset_collection-10"
                 }
             ],
             "result": [
-                {
-                    "@id": "datasets/Concatenate_dataset_collection_(for_test_workflows)_on_data_46,_data_45,_and_others_48.txt"
-                },
                 {
                     "@id": "datasets/Select_first_on_data_48_49.txt"
                 }
