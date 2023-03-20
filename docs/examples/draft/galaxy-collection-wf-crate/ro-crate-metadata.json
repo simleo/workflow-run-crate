@@ -144,9 +144,6 @@
                 },
                 {
                     "@id": "#num_lines_param-param"
-                },
-                {
-                    "@id": "#advanced-param"
                 }
             ],
             "name": "collection_workflow",
@@ -236,9 +233,6 @@
                 },
                 {
                     "@id": "#num_lines_param-pv"
-                },
-                {
-                    "@id": "#advanced-pv"
                 }
             ],
             "result": [
@@ -271,7 +265,7 @@
             "@type": "Collection",
             "additionalType": "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html",
             "exampleOfWork": {
-                "@id": "dataset_collection-11-param"
+                "@id": "#dataset_collection-11-param"
             },
             "hasPart": [
                 {
@@ -286,7 +280,7 @@
         {
             "@id": "#dataset_collection-11-param",
             "@type": "FormalParameter",
-            "additionalType": "File",
+            "additionalType": "Collection",
             "description": "",
             "name": "hello_world"
         },
@@ -301,7 +295,7 @@
             "@type": "Collection",
             "additionalType": "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html",
             "exampleOfWork": {
-                "@id": "dataset_collection-10-param"
+                "@id": "#dataset_collection-10-param"
             },
             "hasPart": [
                 {
@@ -316,7 +310,7 @@
         {
             "@id": "#dataset_collection-10-param",
             "@type": "FormalParameter",
-            "additionalType": "File",
+            "additionalType": "Collection",
             "description": "",
             "name": "hello_universe"
         },
@@ -325,7 +319,7 @@
             "@type": "Collection",
             "additionalType": "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html",
             "exampleOfWork": {
-                "@id": "dataset_collection-13-param"
+                "@id": "#dataset_collection-13-param"
             },
             "hasPart": [
                 {
@@ -333,9 +327,6 @@
                 },
                 {
                     "@id": "datasets/world_34.txt"
-                },
-                {
-                    "@id": "datasets/hello_33.txt"
                 },
                 {
                     "@id": "datasets/universe_31.txt"
@@ -346,7 +337,7 @@
         {
             "@id": "#dataset_collection-13-param",
             "@type": "FormalParameter",
-            "additionalType": "File",
+            "additionalType": "Collection",
             "description": "",
             "name": "data 31, data 30, and others (merged)"
         },
@@ -406,23 +397,15 @@
             "exampleOfWork": {
                 "@id": "#num_lines_param-param"
             },
-            "name": "num_lines_param PropertyValue",
+            "name": "num_lines_param",
             "value": "2"
         },
         {
-            "@id": "#advanced-pv",
-            "@type": "PropertyValue",
-            "exampleOfWork": {
-                "@id": "#advanced-param"
-            },
-            "name": "merge collections tool PropertyValue",
-            "value": {
-                "conflict": {
-                    "__current_case__": 0,
-                    "duplicate_options": "suffix_conflict",
-                    "suffix_pattern": "_#"
-                }
-            }
+            "@id": "#num_lines_param-param",
+            "@type": "FormalParameter",
+            "additionalType": "Integer",
+            "name": "num_lines_param",
+            "valueRequired": "True"
         },
         {
             "@id": "datasets_attrs.txt",
